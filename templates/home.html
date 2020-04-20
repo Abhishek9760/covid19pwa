@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="display-1 indian">Khatam Corona!</h1>
+<ul class="list-group list-group-flush my-4">
+  <li class="list-group-item center list-group-item-info lead">TOTAL CONFIRMED CASES</li>
+  <li class="list-group-item center list-group-item-info lead">{{ data.TotalConfirmed }}</li>
+  <li class="list-group-item center list-group-item-danger lead">TOTAL DEATHS</li>
+  <li class="list-group-item center list-group-item-danger lead">{{ data.TotalDeaths }}</li>
+  <li class="list-group-item center list-group-item-success lead">TOTAL DEATHS</li>
+  <li class="list-group-item center list-group-item-success lead">{{ data.TotalRecovered }}</li>
+</ul>
+<div class="table-responsive">
+  <form id="table-search-form">
+    <div class="form-group">
+      <input type="text" class="form-control" name="q" placeholder="Your Search">
+    </div>
+  </form>
+    <table class="table table-bordered table-hover table-dark table-sm table-striped sticky-header">
+    <caption>Stay Safe | Stay Home</caption>
+      <thead>
+        <tr class="bg-danger">
+          <th scope="col" class="main-head">Country</th>
+          <th scope="col" class="main-head">Total Confirmed</th>
+          <th scope="col" class="main-head">Active Cases</th>
+          <th scope="col" class="main-head">New Confirmed</th>
+          <th scope="col" class="main-head">Total Deaths</th>
+          <th scope="col" class="main-head">New Deaths</th>
+          <th scope="col" class="main-head">Total Recovered</th>
+          <th scope="col" class="main-head">New Recovered</th>
+          <th scope="col" class="main-head">Timing</th>
+        </tr>
+      </thead>
+      <tbody id="corona-data">
+      </tbody>
+    </table>
+</div>
+{% endblock content %}
