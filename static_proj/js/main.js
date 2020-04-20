@@ -76,9 +76,9 @@ $(document).ready(f => {
         
         sel.append(
           "<tr><th scope='row'"+ is_india +">"+ country +"</th><td>"+
-           totalConfirmed +"</td><td>"+ active +"</td><td"+ cls_new_confirmed +">"+
-            newConfirmed +"</td><td>"+ totalDeaths +"</td><td"+ cls_new_deaths +">"+
-             newDeaths +"</td><td>"+ totalRecovered +"</td><td"+ cls_new_recovered +">"+
+           numberWithCommas(totalConfirmed) +"</td><td>"+ active +"</td><td"+ cls_new_confirmed +">"+
+            newConfirmed +"</td><td>"+ numberWithCommas(totalDeaths) +"</td><td"+ cls_new_deaths +">"+
+             newDeaths +"</td><td>"+ numberWithCommas(totalRecovered) +"</td><td"+ cls_new_recovered +">"+
               newRecovered +"</td><td><small>"+ moment.utc(date).format("LT") +"</small></td></tr>"
         )
 
