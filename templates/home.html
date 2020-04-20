@@ -10,11 +10,11 @@
   <li class="list-group-item center list-group-item-success lead">TOTAL RECOVERED CASES </li>
   <li class="list-group-item center list-group-item-success lead">{{ data.TotalRecovered }}</li>
 </ul>
-<div class="col-xs-6 col-12">
+<div class="table-responsive">
   <form id="table-search-form">
     <div class="form-group">
       {% csrf_token %}
-      <input type="text" class="form-control" placeholder="Your Search">
+      <input type="text" class="form-control" placeholder="Search">
     </div>
   </form>
     <table class="table table-bordered table-hover table-dark table-sm table-striped sticky-header">
