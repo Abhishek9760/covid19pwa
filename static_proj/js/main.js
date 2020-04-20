@@ -33,7 +33,7 @@ $(document).ready(f => {
   }
 
     var typingTimer;
-    var doneInterval = 500;
+    var doneInterval = 2000;
     var searchInput = $("#table-search-form input[type=text]");
     var searchQuery;
     searchInput.keyup(function(e) {
