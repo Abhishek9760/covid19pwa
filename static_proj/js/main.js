@@ -15,9 +15,13 @@ $(document).ready(f => {
       }
   }
 
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
   const configure = (val) => {
     if (val > 0) {
-      return "+"+String(val);
+      return "+"+numberWithCommas(val);
     }
     return val
   }
