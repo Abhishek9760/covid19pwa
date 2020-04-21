@@ -15,6 +15,7 @@ table {
     background-color: lightseagreen;
 }
 
+
 .color-green {
     background-color: lightgreen;
 }
@@ -25,11 +26,11 @@ table {
 }
 
 
-table.floatThead-table {
+/* table.floatThead-table {
     border-top: none;
     border-bottom: none;
     background-color: red;
-}
+} */
 
 th.main-head {
   position: sticky;
