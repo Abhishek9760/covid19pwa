@@ -58,6 +58,7 @@ $(document).ready(f => {
     s.append('Loading...<i class="fa fa-spinner fa-spin"></i>')
 
   const showData = (arr) => {
+    $("form").prevent
     sel.empty();
     $.each(arr, f = (key, value) => {
       if(value.TotalConfirmed > 0) {
