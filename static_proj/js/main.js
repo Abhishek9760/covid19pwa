@@ -39,7 +39,6 @@ $(document).ready((f) => {
   }
 
   var typingTimer;
-  var deferredPrompt;
   var sel = $("#corona-data");
   var table = $("table");
   var error = $(".error");
@@ -53,7 +52,8 @@ $(document).ready((f) => {
   var summary_url = "https://api.covid19api.com/summary";
   var searchQuery;
 
-  searchInput.click(function(event) {
+  $('.install-btn').click(function(event) {
+    console.log(event, deferredPrompt);
     if (deferredPrompt) {
       deferredPrompt.prompt();
 

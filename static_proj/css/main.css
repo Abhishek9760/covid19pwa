@@ -109,3 +109,14 @@ th.main-head {
     border-radius: 50%;
     display: inline-block;
 }
+
+.install-btn {
+    position: fixed;
+    top: 15%;
+    right: 5%;
+    z-index: 100000;
+}
+
+.install-btn:focus {
+    outline: none;
+}
