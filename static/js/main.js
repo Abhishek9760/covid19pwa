@@ -39,7 +39,6 @@ $(document).ready((f) => {
   }
 
   var typingTimer;
-  var deferredPrompt;
   var sel = $("#corona-data");
   var table = $("table");
   var error = $(".error");
@@ -52,23 +51,6 @@ $(document).ready((f) => {
   var world_url = "https://api.covid19api.com/world/total";
   var summary_url = "https://api.covid19api.com/summary";
   var searchQuery;
-
-  searchInput.click(function(event) {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-
-      deferredPrompt.userChoice.then(function(choiceResult) {
-        console.log(choiceResult.outcome);
-
-        if (choiceResult.outcome === "dismissed") {
-          console.log("User cancelled installation..");
-        } else {
-          console.log("User added to homescreen");
-        }
-      })
-    }
-    deferredPrompt = null;
-  })
 
   searchInput.keyup(function (e) {
     searchQuery = $(this).val().toLowerCase();

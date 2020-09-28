@@ -1,37 +1,37 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1 class="display-1 indian">Corona Virus</h1>
+  <main class="mdl-layout__content">
+    <div class="page-content">
 
-<div class="world-data">
+      <ul class="demo-list-two mdl-list world-data">
+        
+      </ul>
+      <!-- <h3>Sorry</h3> -->
+      <div class="error"></div>
+      <div class="table-responsive">
+        <table class="table-bordered table-dark mdl-js-data-table mdl-data-table">
+          <caption>Stay Safe | Stay Home</caption>
+          <thead>
+            <tr class="bg-danger">
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">Country</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">Total Confirmed</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">Active Cases</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">New Confirmed</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">Total Deaths</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">New Deaths</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">Total Recovered</th>
+              <th scope="col" class="main-head mdl-data-table__cell--non-numeric">New Recovered</th>
+            </tr>
+          </thead>
+          <tbody id="corona-data">
 
-</div>
 
+          </tbody>
+        </table>
+      </div>
 
-<form id="table-search-form" class="form" onsubmit="return false;">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="Search">
-  </div>
-</form>
+    </div>
+  </main>
 
-<div class="table-responsive">
-    <table class="table table-bordered table-hover table-dark table-sm">
-    <caption>Stay Safe | Stay Home</caption>
-      <thead>
-        <tr class="bg-danger">
-          <th scope="col" class="main-head">Country</th>
-          <th scope="col" class="main-head">Total Confirmed</th>
-          <th scope="col" class="main-head">Active Cases</th>
-          <th scope="col" class="main-head">New Confirmed</th>
-          <th scope="col" class="main-head">Total Deaths</th>
-          <th scope="col" class="main-head">New Deaths</th>
-          <th scope="col" class="main-head">Total Recovered</th>
-          <th scope="col" class="main-head">New Recovered</th>
-          <th scope="col" class="main-head">Timing</th>
-        </tr>
-      </thead>
-      <tbody id="corona-data">
-      </tbody>
-    </table>
-</div>
 {% endblock content %}
