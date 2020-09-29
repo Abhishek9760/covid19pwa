@@ -113,10 +113,13 @@ th.main-head {
 .install-btn {
     position: fixed;
     top: 15%;
-    right: 5%;
-    z-index: 100000;
+    right: 6%;
 }
 
 .install-btn:focus {
     outline: none;
+}
+
+.table-responsive {
+    z-index: 10;
 }
