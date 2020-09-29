@@ -1,4 +1,4 @@
 try:
-    from .local import *
+    from .production import *
 except:
     pass
